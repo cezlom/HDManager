@@ -1,0 +1,94 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 152 56% 98%;
+    --foreground: 152 10% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 152 10% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 152 10% 20%;
+
+    --primary: 152 100% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 152 20% 96%;
+    --secondary-foreground: 152 50% 30%;
+
+    --muted: 152 20% 96%;
+    --muted-foreground: 152 10% 40%;
+
+    --accent: 152 20% 96%;
+    --accent-foreground: 152 50% 30%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 152 20% 90%;
+    --input: 152 20% 90%;
+    --ring: 152 80% 40%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 152 20% 10%;
+    --foreground: 152 10% 90%;
+
+    --card: 152 20% 12%;
+    --card-foreground: 152 10% 90%;
+
+    --popover: 152 20% 12%;
+    --popover-foreground: 152 10% 90%;
+
+    --primary: 152 100% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 152 20% 16%;
+    --secondary-foreground: 152 10% 90%;
+
+    --muted: 152 20% 16%;
+    --muted-foreground: 152 10% 70%;
+
+    --accent: 152 20% 16%;
+    --accent-foreground: 152 10% 90%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 152 20% 20%;
+    --input: 152 20% 20%;
+    --ring: 152 80% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  .hd-card {
+    @apply bg-white rounded-lg shadow-md p-4 transition-all hover:shadow-lg;
+  }
+  
+  .hd-input {
+    @apply bg-white border border-gray-200 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-hdgreen-400;
+  }
+  
+  .hd-button-primary {
+    @apply bg-hdgreen-500 text-white px-4 py-2 rounded-md hover:bg-hdgreen-600 transition-colors;
+  }
+  
+  .hd-button-secondary {
+    @apply bg-white border border-hdgreen-500 text-hdgreen-500 px-4 py-2 rounded-md hover:bg-hdgreen-50 transition-colors;
+  }
+}
