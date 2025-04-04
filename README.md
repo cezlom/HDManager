@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/ca30b761-61c3-4f54-a562-f1992d9eafc3
+**URL**: https://hd-manager-git-main-cezloms-projects.vercel.app/
 
 ## How can I edit this code?
 
