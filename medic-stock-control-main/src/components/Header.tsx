@@ -16,7 +16,7 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between mb-4">
           {/* LOGO GRANDE À ESQUERDA */}
           <img
-            src="/homedoctorbrasil_logo.jpg"
+            src="/src/homedoctorbrasil_logo.jpg"
             alt="Logo Home Doctor"
             className="w-20 h-20"
           />
